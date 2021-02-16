@@ -15,7 +15,7 @@
   \*******************************/
 /***/ (() => {
 
-eval("console.log(\"Alhamdulillah, we are starting our DOM\");\n\n//# sourceURL=webpack://code/./04.Basic_selectors.js?");
+eval("/**************************\n* Bismillahir Rahmanir Rahim\n* DOM T-04\n* Basic Selectors of DOM\n* Author : Shihan Chowdhury\n* Thanks to - Twinkle Cats \n**************************/\nvar h1_id = document.getElementById('04T-id');\nvar btn_id = document.getElementById('04T-btn-id');\nvar colors = ['red', 'green', 'blue'];\nvar i = 0;\nbtn_id.addEventListener('click', function () {\n  h1_id.style.color = colors[i];\n\n  if (i > colors.length) {\n    i = 0;\n  } else {\n    i++;\n  }\n});\n\n//# sourceURL=webpack://code/./04.Basic_selectors.js?");
 
 /***/ })
 
