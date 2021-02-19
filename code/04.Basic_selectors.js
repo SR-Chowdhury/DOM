@@ -20,3 +20,17 @@ btn_id.addEventListener('click', function() {
     }
 });
 
+
+// index.html
+
+// <!-- 04.Basic Selectors in DOM -->
+
+// <div class="container">
+//     <div class="row">
+//         <div class="col">
+//             <h1 class="text-center" id = "04T-id">04 Basic Selector in DOM</h1>
+//             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium iusto accusamus dolor. Fuga, ex dolore? Quibusdam corrupti vero debitis non repellat voluptate vel culpa aspernatur?</p>
+//             <button id="04T-btn-id" class="btn btn-primary">Click Me</button>
+//         </div>
+//     </div>
+// </div>
