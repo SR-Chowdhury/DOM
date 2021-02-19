@@ -9,13 +9,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./04.Basic_selectors.js":
-/*!*******************************!*\
-  !*** ./04.Basic_selectors.js ***!
-  \*******************************/
+/***/ "./05.QuerySelector_DOM.js":
+/*!*********************************!*\
+  !*** ./05.QuerySelector_DOM.js ***!
+  \*********************************/
 /***/ (() => {
 
-eval("/**************************\n* Bismillahir Rahmanir Rahim\n* DOM T-04\n* Basic Selectors of DOM\n* Author : Shihan Chowdhury\n* Thanks to - Twinkle Cats \n**************************/\n// let h1_id = document.getElementById('04T-id');\n// let btn_id = document.getElementById('04T-btn-id');\n// let colors = ['red', 'green', 'blue'];\n// let i = 0;\n// btn_id.addEventListener('click', function() {\n//     h1_id.style.color = colors[i];\n//     if(i> colors.length) {\n//         i = 0;\n//     } else {\n//         i++;\n//     }\n// });\nvar one = document.getElementById('one');\nvar two = document.getElementsByClassName('two');\ntwo[0].style.color = 'blue';\n\n//# sourceURL=webpack://code/./04.Basic_selectors.js?");
+eval("/**************************\n* Bismillahir Rahmanir Rahim\n* DOM T-05\n* Query Selector of DOM\n* Author : Shihan Chowdhury\n* Thanks to - Twinkle Cats \n**************************/\nvar h1_id = document.querySelector('#h1-tag'); // let btn_id = document.querySelector('#btn-id');\n\nvar btn_id = $('#btn-id');\nvar colors = ['yellow', 'purple', 'salmon'];\nvar x = 0;\nbtn_id.addEventListener('click', function () {\n  h1_id.style.color = colors[x];\n\n  if (x > colors.length) {\n    x = 0;\n    h1_id.style.color = colors[x];\n  } else {\n    x++;\n  }\n}); // Now we are minimizing document.querySelector('#....); by making a funciton\n\nfunction $(selector) {\n  return document.querySelector(selector);\n}\n\nvar btnId2 = $('#btn-id-2');\nvar pTag = $('#pTag');\nbtnId2.addEventListener('click', function () {\n  pTag.style.color = 'salmon';\n});\n\n//# sourceURL=webpack://code/./05.QuerySelector_DOM.js?");
 
 /***/ })
 
@@ -26,7 +26,7 @@ eval("/**************************\n* Bismillahir Rahmanir Rahim\n* DOM T-04\n* B
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./04.Basic_selectors.js"]();
+/******/ 	__webpack_modules__["./05.QuerySelector_DOM.js"]();
 /******/ 	
 /******/ })()
 ;
