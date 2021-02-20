@@ -9,13 +9,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./06.style_doc_DOM.js":
-/*!*****************************!*\
-  !*** ./06.style_doc_DOM.js ***!
-  \*****************************/
+/***/ "./07.Event_in_DOM.js":
+/*!****************************!*\
+  !*** ./07.Event_in_DOM.js ***!
+  \****************************/
 /***/ (() => {
 
-eval("/**************************\n* Bismillahir Rahmanir Rahim\n* DOM T-06\n* Style Document of DOM\n* Author : Shihan Chowdhury\n* Thanks to - Twinkle Cats \n**************************/\n$ = function $(selector) {\n  return document.querySelector(selector);\n};\n\nvar h1Tag = $('#h1Tag');\nvar pTag = $('#pTag');\nh1Tag.style.color = 'salmon';\nh1Tag.style.fontSize = '35px';\nh1Tag.style.borderBottom = '3px solid yellow';\nvar pStyle = {\n  padding: '5px',\n  color: 'purple',\n  border: '2px solid blue',\n  lineHeigth: '1.3'\n};\nObject.assign(pTag.style, pStyle);\nObject.assign($('#anotherP').style, pStyle);\n\n//# sourceURL=webpack://code/./06.style_doc_DOM.js?");
+eval("/**************************\n* Bismillahir Rahmanir Rahim\n* DOM T-07\n* Working with Event in DOM\n* Author : Shihan Chowdhury\n* Thanks to - Twinkle Cats \n**************************/\n$ = function $(selector) {\n  return document.querySelector(selector);\n};\n\nvar toggleBtn = $('#toggleBtn');\nvar para = $('.para');\nvar flag = false;\ntoggleBtn.addEventListener('click', function () {\n  if (flag) {\n    para.style.visibility = 'hidden';\n    flag = false;\n    toggleBtn.innerHTML = 'Show';\n  } else {\n    para.style.visibility = 'visible';\n    flag = true;\n    toggleBtn.innerHTML = 'Hide';\n  }\n});\n\n//# sourceURL=webpack://code/./07.Event_in_DOM.js?");
 
 /***/ })
 
@@ -26,7 +26,7 @@ eval("/**************************\n* Bismillahir Rahmanir Rahim\n* DOM T-06\n* S
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./06.style_doc_DOM.js"]();
+/******/ 	__webpack_modules__["./07.Event_in_DOM.js"]();
 /******/ 	
 /******/ })()
 ;
