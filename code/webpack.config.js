@@ -7,7 +7,8 @@ const config = {
     // entry: './04.Basic_selectors.js',
     // entry: './05.QuerySelector_DOM.js',
     // entry: './06.style_doc_DOM.js',
-    entry: './07.Event_in_DOM.js',
+    // entry: './07.Event_in_DOM.js',
+    entry: './08.creating_deleting_DOM_ele.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
